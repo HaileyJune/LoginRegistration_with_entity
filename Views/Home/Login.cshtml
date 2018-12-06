@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@using LoginRegistration.Models
+@model UserObject
+<h1>Who Are You?</h1>
+<form asp-action="DoesLogin" asp-controller="Home" method="POST">
+<span asp-validation-for="Email"></span>
+    <div></div>
+    <label asp-for="Email"></label>
+    <input asp-for="Email">
+    <div></div>
+    <span asp-validation-for="Password"></span>
+    <div></div>
+    <label asp-for="Password"></label>
+    <input asp-for="Password">
+    <div></div>
+    <input type="Submit" value="Sell Your Soul">
+</form>
+
+<a href="/">[Something Clever]</a>
